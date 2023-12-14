@@ -1,0 +1,26 @@
+<div *ngIf="categ">
+    <h2>Modifier Catégorie</h2>
+    <a href="#" routerLink="/categories" class="btn btn-success mb-3">Retour</a>
+    <form [formGroup]="form" (ngSubmit)="modifierCategorie()">
+        <table class="table table-striped">
+            
+        <tr>
+        <td for="code">Code:</td>
+        <td><input type="text" id="code" formControlName="code" /></td>
+        </tr>
+        <tr>
+        <td for="libelle">Libellé:</td>
+        <td><input type="text" id="libelle" formControlName="libelle" /></td>
+            </tr>
+        
+        <tr>
+            <td [attr.colspan]="2" align="center">
+                <button type="submit" value="Valider"  class="btn btn-success"
+                    style="background-color: green; color: white;">
+                    <span class="bi bi-pen"></span> Valider
+                </button>
+            </td>
+        </tr>
+        </table>
+    </form>
+</div>

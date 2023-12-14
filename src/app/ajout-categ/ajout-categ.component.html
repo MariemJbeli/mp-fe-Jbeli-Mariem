@@ -1,0 +1,32 @@
+<div class="container-fluid page">
+    <h1> Ajouter Categorie </h1>
+    <div class="page__content shadow p-3 position-relative">
+        <div class="container">
+
+            <a href="#" routerLink="/categories" class="btn btn-success">Retour</a>
+
+            <form [formGroup]="form" (ngSubmit)="submit()">
+                <table class="table table-striped">
+                    <tr>
+                        <td><label for="code">  Code categorie:   </label></td>
+                        <td><input formControlName="code" id="code" type="text" ></td>
+                    </tr>
+                        
+
+                <tr>
+                    <td><label for="libelle">Libelle categorie:</label></td>
+                    <td><input formControlName="libelle" id="libelle" type="text" ></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button  type="submit" [disabled]="!form.valid" class="btn btn-success" style="background-color: green; color: white;">
+                        <span class="bi bi-plus"></span>Ajouter</button>
+                    </td>
+                </tr>
+            </table>
+          
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container-fluid page">
+    <h1> Categorie </h1>
+    
+        
+    <div class="page__content shadow p-3 position-relative">
+
+        <div class="container">
+
+            <a href="#" routerLink="/ajoutCateg" class="btn btn-success">Ajouter Catégorie</a>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Code </th>
+                        <th>Libelle Categorie </th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let categ of categ">
+                        <td>{{ categ.id }}</td>
+                        <td>{{ categ.code }}</td>
+                        <td>{{ categ.libelle }}</td>
+                    
+                        <td>
+                            <a href="#" [routerLink]="[ categ.id, 'detailCateg']" class="btn btn-success" ><i class="bi bi-list"></i>Détail</a>
+                        </td>
+                        <td>
+                            <a href="#" [routerLink]="[ categ.id, 'modifCateg']" class="btn btn-dark"><i class="bi bi-pen"></i>Modifier</a>
+                        </td>
+                        <td>
+                            <button type="button" (click)="deleteCateg(categ.id)" class="btn btn-danger">
+                                <i class="bi bi-trash"></i>Supprimer</button>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+
+
+
+
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{
+  "produits": [
+    {
+      "id": 1,
+      "code": "x13",
+      "designation": "Panier plastique",
+      "prix": "404"
+    },
+    {
+      "id": 2,
+      "code": "XX",
+      "designation": "Papier",
+      "prix": "1111"
+    },
+    {
+      "id": 3,
+      "code": "x12",
+      "designation": "salon en cuir",
+      "prix": 45
+    },
+    {
+      "id": 4,
+      "code": "625601",
+      "designation": "aaa",
+      "prix": 1
+    },
+    {
+      "id": 5,
+      "code": "XXB",
+      "designation": "Panier Bois",
+      "prix": 100
+    },
+    {
+      "id": 6,
+      "code": "XX1",
+      "designation": "Panier plastique22",
+      "prix": 220
+    }
+  ]
+}
